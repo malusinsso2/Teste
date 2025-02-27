@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Observation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Safety Observation</h1>
+        <form id="reportForm" action="/enviar-relatorio" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="seguranca@suaempresa.com.br" required>
+
+            <label for="local">Local da Observação:</label>
+            <input type="text" id="local" name="local" required>
+
+            <label for="descricao">Descrição da Observação:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+            <button type="submit">Enviar Relatório</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
